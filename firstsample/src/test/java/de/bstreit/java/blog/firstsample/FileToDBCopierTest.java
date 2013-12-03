@@ -24,7 +24,8 @@ public class FileToDBCopierTest {
 	 */
 	@Test
 	public void testCopy() throws Exception {
-		try (ConfigurableApplicationContext context = getContext()) {
+		final ConfigurableApplicationContext context = getContext();
+		try {
 			// INIT
 			final File fileWithLines = getLinesFileFromClasspath();
 			final FileToDBCopier copier = context.getBean(FileToDBCopier.class);
@@ -38,6 +39,8 @@ public class FileToDBCopierTest {
 			final List<String> expectedLines = Arrays.asList("line 1", "line 2", "line 3");
 
 			Assert.assertEquals(expectedLines, actualLines);
+		} finally {
+			context.close();
 		}
 	}
 
