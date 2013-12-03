@@ -4,7 +4,7 @@
 
 	<groupId>de.bstreit.java.blog</groupId>
 	<artifactId>firstsample</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.3</version>
 	<packaging>jar</packaging>
 
 	<name>firstsample</name>
