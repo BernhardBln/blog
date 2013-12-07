@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.bstreit.java.blog</groupId>
-	<artifactId>sample02</artifactId>
+	<artifactId>firstsample</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
