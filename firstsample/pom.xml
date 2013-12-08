@@ -4,11 +4,7 @@
 
 	<groupId>de.bstreit.java.blog</groupId>
 	<artifactId>firstsample</artifactId>
-<<<<<<< HEAD
-	<version>0.0.1</version>
-=======
 	<version>0.0.3</version>
->>>>>>> 8291fd0354deba14584913d90fb8f0ef8bee2b8f
 	<packaging>jar</packaging>
 
 	<name>firstsample</name>
