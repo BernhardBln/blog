@@ -8,22 +8,22 @@ import java.util.List;
 
 public class MyObjects {
 
-	final List<String> data = new ArrayList<String>();
+  final List<String> data = new ArrayList<String>();
 
 
-	public MyObjects() {
+  public MyObjects() {
 
-	}
+  }
 
-	public MyObjects(String... lines) {
-		data.addAll(Arrays.asList(lines));
-	}
+  public MyObjects(String... lines) {
+    data.addAll(Arrays.asList(lines));
+  }
 
-	public void addLine(String line) {
-		data.add(line);
-	}
+  public void addLine(String line) {
+    data.add(line);
+  }
 
-	public List<String> getLines() {
-		return Collections.unmodifiableList(data);
-	}
+  public List<String> getLines() {
+    return Collections.unmodifiableList(data);
+  }
 }

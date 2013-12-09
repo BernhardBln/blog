@@ -12,16 +12,16 @@ import de.bstreit.java.blog.sample02.filereader.IFileReadHelper;
 @Named
 public class FileToDBCopier {
 
-	@Inject
-	private IDatabaseHelper dbHelper;
+  @Inject
+  private IDatabaseHelper dbHelper;
 
-	@Inject
-	private IFileReadHelper fileReadHelper;
+  @Inject
+  private IFileReadHelper fileReadHelper;
 
 
-	public void startCopying(File fromFile) throws IOException {
-		MyObjects data = fileReadHelper.readFile(fromFile);
-		dbHelper.writeToDB(data);
-	}
+  public void startCopying(File fromFile) throws IOException {
+    MyObjects data = fileReadHelper.readFile(fromFile);
+    dbHelper.writeToDB(data);
+  }
 
 }
