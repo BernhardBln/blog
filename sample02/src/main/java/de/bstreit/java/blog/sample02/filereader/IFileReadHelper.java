@@ -8,6 +8,6 @@ import de.bstreit.java.blog.sample02.copier.MyObjects;
 
 public interface IFileReadHelper {
 
-	public abstract MyObjects readFile(File fromFile) throws IOException;
+	public MyObjects readFile(File fromFile) throws IOException;
 
 }
