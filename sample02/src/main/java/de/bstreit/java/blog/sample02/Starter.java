@@ -3,6 +3,9 @@ package de.bstreit.java.blog.sample02;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import de.bstreit.java.blog.sample02.beans.Application;
+import de.bstreit.java.blog.sample02.config.Config;
+
 public class Starter {
 
   public static void main(String[] args) throws Exception {
