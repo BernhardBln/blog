@@ -6,7 +6,7 @@ import java.io.IOException;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import de.bstreit.java.blog.sample02.copier.FileToDBCopier;
+import de.bstreit.java.blog.sample02.beans.copier.FileToDBCopier;
 
 @Named
 public class Application {
