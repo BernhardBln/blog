@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Named;
+import javax.inject.Singleton;
 
 import de.bstreit.java.blog.sample03.copier.MyObjects;
 import de.bstreit.java.blog.sample03.database.IDatabaseHelper;
@@ -14,6 +15,7 @@ import de.bstreit.java.blog.sample03.database.IDatabaseHelper;
  * @author streit
  */
 @Named
+@Singleton
 public class JUnitDatabaseMock implements IDatabaseHelper {
 
   private List<String> lines = new ArrayList<String>();
