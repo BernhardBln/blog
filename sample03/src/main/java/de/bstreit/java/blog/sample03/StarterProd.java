@@ -1,9 +1,10 @@
 package de.bstreit.java.blog.sample03;
 
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import com.google.inject.Guice;
+import com.google.inject.Injector;
 
 import de.bstreit.java.blog.sample03.application.Application;
-import de.bstreit.java.blog.sample03.config.ProdConfig;
+import de.bstreit.java.blog.sample03.config.ProductionModule;
 
 /**
  * Uses real FileReadHelper and System-out-DatabaseHelper.
@@ -13,16 +14,10 @@ import de.bstreit.java.blog.sample03.config.ProdConfig;
 public class StarterProd {
 
   public static void main(String[] args) throws Exception {
-    final AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(
-        ProdConfig.class);
+    final Injector injector = Guice.createInjector(new ProductionModule());
 
-    try {
-      final Application app = context.getBean(Application.class);
-      app.start();
-
-    } finally {
-      context.close();
-    }
+    final Application app = injector.getInstance(Application.class);
+    app.start();
   }
 
 }
