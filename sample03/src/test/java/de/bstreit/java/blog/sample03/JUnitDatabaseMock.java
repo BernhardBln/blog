@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Named;
+import javax.inject.Singleton;
 
 import org.springframework.context.annotation.Profile;
 
@@ -16,6 +17,7 @@ import de.bstreit.java.blog.sample03.database.IDatabaseHelper;
  * @author streit
  */
 @Named
+@Singleton
 @Profile("junit")
 public class JUnitDatabaseMock implements IDatabaseHelper {
 

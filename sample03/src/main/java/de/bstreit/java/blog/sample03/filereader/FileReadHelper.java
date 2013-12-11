@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import javax.inject.Named;
+import javax.inject.Singleton;
 
 import org.springframework.context.annotation.Profile;
 
@@ -13,6 +14,7 @@ import de.bstreit.java.blog.sample03.copier.MyObjects;
 
 @Named
 @Profile("prod")
+@Singleton
 public class FileReadHelper implements IFileReadHelper {
 
   @Override
