@@ -2,6 +2,8 @@ package de.bstreit.java.blog.sample03;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import de.bstreit.java.blog.sample03.application.Application;
+
 /**
  * Uses mocked FileReadHelper and System-out-DatabaseHelper.
  * 
