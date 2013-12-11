@@ -6,10 +6,12 @@ import java.net.URL;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.inject.Singleton;
 
 import de.bstreit.java.blog.sample03.copier.FileToDBCopier;
 
 @Named
+@Singleton
 public class Application {
 
   @Inject
