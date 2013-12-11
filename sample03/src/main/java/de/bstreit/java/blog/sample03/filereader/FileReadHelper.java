@@ -7,12 +7,9 @@ import java.io.IOException;
 
 import javax.inject.Named;
 
-import org.springframework.context.annotation.Profile;
-
 import de.bstreit.java.blog.sample03.copier.MyObjects;
 
 @Named
-@Profile("prod")
 public class FileReadHelper implements IFileReadHelper {
 
   @Override

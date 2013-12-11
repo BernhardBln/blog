@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import de.bstreit.java.blog.sample03.config.TestConfig;
 import de.bstreit.java.blog.sample03.copier.FileToDBCopier;
 
 /**
@@ -49,14 +50,7 @@ public class FileToDBCopierTest {
   }
 
   private AnnotationConfigApplicationContext getContext() {
-    final AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-
-    context.getEnvironment().addActiveProfile("junit");
-    context.register(Config.class);
-
-    context.refresh();
-
-    return context;
+    return new AnnotationConfigApplicationContext(TestConfig.class);
   }
 
   /**

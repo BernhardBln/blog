@@ -1,4 +1,4 @@
-package de.bstreit.java.blog.sample03;
+package de.bstreit.java.blog.sample03.application;
 
 import java.io.File;
 import java.io.IOException;
