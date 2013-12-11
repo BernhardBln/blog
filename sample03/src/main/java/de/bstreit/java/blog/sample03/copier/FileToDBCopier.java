@@ -5,11 +5,13 @@ import java.io.IOException;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.inject.Singleton;
 
 import de.bstreit.java.blog.sample03.database.IDatabaseHelper;
 import de.bstreit.java.blog.sample03.filereader.IFileReadHelper;
 
 @Named
+@Singleton
 public class FileToDBCopier {
 
   @Inject

@@ -4,10 +4,12 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.inject.Named;
+import javax.inject.Singleton;
 
 import de.bstreit.java.blog.sample03.copier.MyObjects;
 
 @Named
+@Singleton
 public class SandboxFileReadHelper implements IFileReadHelper {
 
   @Override

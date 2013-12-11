@@ -6,10 +6,12 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import javax.inject.Named;
+import javax.inject.Singleton;
 
 import de.bstreit.java.blog.sample03.copier.MyObjects;
 
 @Named
+@Singleton
 public class FileReadHelper implements IFileReadHelper {
 
   @Override
