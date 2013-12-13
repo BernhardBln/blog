@@ -1,35 +1,12 @@
 package de.bstreit.java.blog.sample03.config;
 
-import javax.inject.Inject;
-
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-
-import de.bstreit.java.blog.sample03.StarterDev;
-import de.bstreit.java.blog.sample03.database.IDatabaseHelper;
-import de.bstreit.java.blog.sample03.database.SandboxDatabaseHelper;
-import de.bstreit.java.blog.sample03.filereader.IFileReadHelper;
-import de.bstreit.java.blog.sample03.filereader.SandboxFileReadHelper;
+import org.springframework.context.annotation.Import;
 
 
 @Configuration
-@ComponentScan(basePackageClasses = StarterDev.class)
+@Import(AbstractConfig.class)
 public class DevConfig {
 
-  @Inject
-  @Primary
-  @Bean
-  public IDatabaseHelper getDatabaseHelper(SandboxDatabaseHelper databaseHelper) {
-    return databaseHelper;
-  }
-
-  @Inject
-  @Primary
-  @Bean
-  public IFileReadHelper getFileReadHelper(SandboxFileReadHelper fileReadHelper) {
-    return fileReadHelper;
-  }
 
 }
