@@ -31,12 +31,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>net.wessendorf.spring.scopes</groupId>
-			<artifactId>spring-cdi-bridge</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
-		</dependency>
-
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-logging</artifactId>
 		</dependency>
